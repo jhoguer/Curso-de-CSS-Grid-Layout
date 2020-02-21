@@ -11,8 +11,8 @@
     }
     .container {
       display: grid;
-      grid-template-columns: 3fr 2fr 1fr 1fr;
-      grid-template-rows: repeat(2, 200px);
+      grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
+      grid-template-rows: [inicio] 200px [linea2] 200px [final];
       gap: 5px;
       height: 100vh;
     }
@@ -26,15 +26,17 @@
     }
 
     .item:nth-of-type(1) {
-      grid-row: 1 / span 2;
+      grid-column: inicio / destacado-end;
+      grid-row: inicio / final;
     }
 
     .item:nth-of-type(2) {
-      grid-row: 1 / span 2;
+      grid-column: destacado-end / destacado2-end;
+      grid-row: inicio / final;
     }
 
     .item:nth-of-type(3) {
-      grid-column: 3 / span 2;
+      grid-column: destacado2-end / final;
     }
 
     
@@ -42,9 +44,7 @@
 </head>
 <body>
   <section class="container">
-    <div class="item">
-      <img src="" alt="">
-    </div>
+    <div class="item">item #1</div>
     <div class="item">item #2</div>
     <div class="item">item #3</div>
     <div class="item">item #4</div>

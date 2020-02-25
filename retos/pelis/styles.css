@@ -88,13 +88,14 @@
 .container .movies .board .movie .description {
   margin-top: -106px;
   padding: 7px 8px 0px;
-  background-color: red;
+  background: rgba(233, 4, 4, 0.5);
   height: 95px;
   position: relative;
-  opacity: .6;
   color: white;
+  
 }
 
 .container .movies .board .movie .description h3 {
-
+  font-size: 22px;
+  font-family: 'Muli' ;
 }

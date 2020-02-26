@@ -47,8 +47,8 @@
 
 .container {
   display: grid;
-  grid-template-columns: 15% 85%;
-  grid-template-rows: 600px;
+  grid-template-columns: 8% 92%;
+  grid-template-rows: 100%;
 }
 
 .container .sidebar {
@@ -69,33 +69,94 @@
   margin: 20px 10px 25px 20px;
 }
 
+.container .movies {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.movies-title {
+  margin: 25px 0 0 65px;
+}
 .container .movies .board {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 1fr;
+}
+
+.container .movies .board .movie-board {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 213px 213px 213px;
-  gap: 70px 10px;
+  /* grid-template-rows: 40px 1fr 40px 1fr 40px 1fr; */
+  grid-template-rows: 1fr;
+  justify-items: center;
+  gap: 5px 5px;
 
 }
 
-.container .movies .board .movie {
+.container .movies .board2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 1fr;
+}
+
+.container .movies .board2 .movie-board2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  gap: 5px 5px;
+
+}
+
+.container .movies .board3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px 1fr;
+}
+
+.container .movies .board3 .movie-board3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  gap: 5px 5px;
+
+}
+
+/* .container .movies .board:nth-of-type(1) {
+  grid-column: 1 / span 3;
+} */
+
+.movie {
   width: 300px;
 }
 
-.container .movies .board .movie img {
-  width: 300px;
+.movie img {
+  width: 100%;
 }
 
-.container .movies .board .movie .description {
-  margin-top: -106px;
-  padding: 7px 8px 0px;
+.movie .description {
+  margin-top: -130px;
+  padding: 15px 0 29px 0;
   background: rgba(233, 4, 4, 0.5);
-  height: 95px;
+  height: 82px;
+  width: 100%;
   position: relative;
   color: white;
   
 }
 
-.container .movies .board .movie .description h3 {
+.movie .description h3 {
   font-size: 22px;
-  font-family: 'Muli' ;
+  font-family: 'Muli';
+  padding-left: 10px;
+}
+
+.movie .description p {
+  font-size: 14px;
+  font-family: 'Muli';
+  padding-left: 10px;
+  padding-right: 10px;
 }
